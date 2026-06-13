@@ -1,4 +1,5 @@
 /*
+LeetCode 242 - Valid Anagram
 So I solvef this leetcode problem which is to check if two strings are anagram or not.
 the approach i followed is :-
 1. I created unordered maps and stored the character and frequency of each string in its map.
