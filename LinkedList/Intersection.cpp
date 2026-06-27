@@ -28,21 +28,25 @@ Space Complexity : O(1) .
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-    //     ListNode*temp1=headA;
-    //     ListNode*temp2=headB;
-    //    unordered_set<ListNode*>mp;
-    //    while(temp1!=nullptr){
-    //     mp.insert(temp1);
-    //     temp1=temp1->next;
-    //    }
-    //    while(temp2!=nullptr){
-    //     if(mp.find(temp2)!=mp.end()){
-    //         return temp2;
-    //         break;
-    //     }
-    //     temp2=temp2->next;
-    //    }
-    //    return nullptr;
+        /*  METHOD NUMBER ONE  */
+        ListNode*temp1=headA;
+        ListNode*temp2=headB;
+       unordered_set<ListNode*>mp;
+       while(temp1!=nullptr){
+        mp.insert(temp1);
+        temp1=temp1->next;
+       }
+       while(temp2!=nullptr){
+        if(mp.find(temp2)!=mp.end()){
+            return temp2;
+            break;
+        }
+        temp2=temp2->next;
+       }
+       return nullptr;
+
+        /*   METHOD NUMBER TWO  */
+    
     ListNode*temp1=headA;
     ListNode*temp2=headB;
     while(temp1!=temp2){
