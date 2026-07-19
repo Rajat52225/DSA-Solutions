@@ -5,8 +5,8 @@ So approach was like:-
 2. Then just rank 1 to till there are unqiue elements and store number and rank in map.
 3. Then just traverse the original array and replace number with rank from map.
 
-Time Complexity : O(n).
-Space Complexity : O(n*n) .
+Time Complexity : O(nlogn).
+Space Complexity : O(n) .
 
 */
 
